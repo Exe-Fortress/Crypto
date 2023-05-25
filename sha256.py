@@ -2,9 +2,6 @@
     author  : Exe_Fortress
     version : 0.1.0
     ref     : NIST.FIPS.180-4, other scripts for references
-
-    #  !!!You can sample this script and improve it!!!
-
 """
 class H256():    
       
@@ -142,7 +139,7 @@ class H256():
         return REMAKE_SHA256  
 
 def H256_test():
-    import time, os, hashlib, sha256_1
+    import time, os, hashlib
     INTERNAL_HASH = []
     round = 1000
     message = os.urandom(round)
@@ -156,4 +153,4 @@ def H256_test():
     print (f'H256: \t{i+1} Hash \nSize: \t{size} bytes \nTime: \t{elapsed:.8f} second \t{(i+1) / elapsed:.2f} Hash/second \t{size / elapsed:.2f} Bits/second\n')
     
 while True:
-    H256_test() # i can get 1000 h/s 
+    H256_test() # i can get 1200 h/s 

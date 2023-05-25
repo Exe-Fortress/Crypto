@@ -156,4 +156,4 @@ def H256_test():
     print (f'H256: \t{i+1} Hash \nSize: \t{size} bytes \nTime: \t{elapsed:.8f} second \t{(i+1) / elapsed:.2f} Hash/second \t{size / elapsed:.2f} Bits/second\n')
     
 while True:
-    H256_test()
+    H256_test() # i can get 1000 h/s 
